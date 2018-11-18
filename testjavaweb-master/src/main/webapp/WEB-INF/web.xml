@@ -1,0 +1,29 @@
+<!DOCTYPE web-app PUBLIC
+        "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <display-name>Some name</display-name>
+
+    <servlet>
+        <servlet-name>RedirectToAuthServlet</servlet-name>
+        <servlet-class>com.webim.RedirectToAuthServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ShowFriendsServlet</servlet-name>
+        <servlet-class>com.webim.ShowFriendsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RedirectToAuthServlet</servlet-name>
+        <url-pattern>/redirectToAuth</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet-mapping>
+        <servlet-name>ShowFriendsServlet</servlet-name>
+        <url-pattern>/showFriends</url-pattern>
+    </servlet-mapping>
+
+</web-app>
